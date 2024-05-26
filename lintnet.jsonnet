@@ -4,11 +4,16 @@ function(param) {
   targets: [
     {
       data_files: [
-        '.github/workflows/*.yml',
-        '.github/workflows/*.yaml',
+        '**/*',
+        '!testdata/**/*',
       ],
       lint_files: [
-        '**/main.jsonnet',
+        {
+          path: '**/main.jsonnet',
+          config: {
+            trim_space: true,
+          },
+        },
       ],
     },
   ],

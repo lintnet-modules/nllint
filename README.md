@@ -15,7 +15,7 @@ function(param) {
       ],
       modules: [
         // without config
-        'github_archive/github.com/lintnet-modules/nllint/main.jsonnet@60a46a4fa4c0e7b1b95f57c479e756afa2f376e9:v0.1.0',
+        'github_archive/github.com/lintnet-modules/nllint/main.jsonnet@8cfc4eae68ec93f9b92d9048ce51b0d9646c976c:v0.1.0',
       ],
     },
   ],
@@ -34,7 +34,7 @@ function(param) {
       modules: [
         // with config
         {
-          path: 'github_archive/github.com/lintnet/modules/modules/nllint/main.jsonnet@60a46a4fa4c0e7b1b95f57c479e756afa2f376e9:v0.1.0',
+          path: 'github_archive/github.com/lintnet/modules/modules/nllint/main.jsonnet@8cfc4eae68ec93f9b92d9048ce51b0d9646c976c:v0.1.0',
           config: {
             trim_space: true,
           },

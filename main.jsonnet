@@ -7,7 +7,7 @@ function(param)
     ]
   else if
     std.get(param.config, 'trim_space', false) &&
-    std.native('strings.TrimSpace')(param.data.text) + '\n' != param.data.text
+    std.native('strings.TrimSpace')(param.data.text)[0] + '\n' != param.data.text
   then [
     {
       name: 'leading and trailing white spaces should be removed',

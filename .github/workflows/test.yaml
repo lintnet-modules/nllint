@@ -2,6 +2,9 @@
 name: test
 on: pull_request
 permissions: {}
+concurrency:
+  group: ${{github.workflow}}-${{github.ref}}
+  cancel-in-progress: true
 jobs:
   # Please don't add jobs to this file. Add them to .github/workflows/workflow_call_test.yaml
   status-check:

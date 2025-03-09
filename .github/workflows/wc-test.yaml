@@ -1,10 +1,9 @@
 ---
 name: wc-test
 on: workflow_call
-
 jobs:
   test:
-    timeout-minutes: 30
+    timeout-minutes: 20
     runs-on: ubuntu-latest
     permissions: {}
     steps:

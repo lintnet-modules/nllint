@@ -15,9 +15,9 @@ jobs:
     needs:
       - test
     steps:
-      - name: Any jobs failed
+      - name: Some other jobs failed
         run: |
-          echo "::error:: Any jobs failed. Please check $GITHUB_SERVER_URL/$GITHUB_REPOSITORY/actions/runs/$GITHUB_RUN_ID"
+          echo "::error:: Some other jobs failed. Please check $GITHUB_SERVER_URL/$GITHUB_REPOSITORY/actions/runs/$GITHUB_RUN_ID"
           exit 1
   test:
     uses: ./.github/workflows/workflow_call_test.yaml

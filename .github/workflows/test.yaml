@@ -9,7 +9,7 @@ jobs:
   # Please don't add jobs to this file. Add them to .github/workflows/workflow_call_test.yaml
   status-check:
     runs-on: ubuntu-24.04
-    if: failure()
+    if: always() && (contains(needs.*.result, 'failure') || contains(needs.*.result, 'cancelled'))
     timeout-minutes: 10
     permissions: {}
     needs:
